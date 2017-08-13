@@ -12,7 +12,13 @@ import java.io.IOException;
 public class FileReader {
     private static final Logger log = Logger.getLogger(FileReader.class); // logger initialization
 
-    // if we need to research all files in folder
+    /**
+     * This method is used to open an EDI file
+     *
+     * @param datafolder - folder with data
+     * @param prodFolder - folder on the prod
+     * @param archiveFolder - archive folder
+     */
     public void openEDIfile(String datafolder, String prodFolder, String archiveFolder){
         File inFolder = new File(datafolder);
         if (!inFolder.exists()){

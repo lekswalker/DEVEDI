@@ -10,6 +10,13 @@ import java.util.Optional;
  */
 public class UpdateEDI {
     private static final Logger log = Logger.getLogger(UpdateEDI.class);
+
+    /**
+     * This method is used to delete TA1 segment from 997
+     *
+     * @param fileData - EDI document
+     * @return - updated file
+     */
     public String updateEDI(String fileData){
         String updateFileText = "";
         try{
